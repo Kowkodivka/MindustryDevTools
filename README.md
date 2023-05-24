@@ -1,6 +1,7 @@
 [![](https://jitpack.io/v/Kowkodivka/MindustryDevTools.svg)](https://jitpack.io/#Kowkodivka/MindustryDevTools)
 
 # MindustryDevTools
+
 For own use, no documentation available
 
 ## Building
