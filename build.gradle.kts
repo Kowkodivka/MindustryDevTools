@@ -30,12 +30,18 @@ subprojects {
 
     configure<PublishingExtension> {
         publications {
-            create<MavenPublication>("maven") {
+            create<MavenPublication>("release") {
                 artifactId = project.name
                 groupId = project.group.toString()
                 version = project.version.toString()
 
                 from(components["java"])
+
+                pom {
+                    name.set("MindustryDevTools")
+                    description.set("Library of helpful utilities")
+                    url.set("https://github.com/Kowkodivka/MindustryDevTools")
+                }
             }
         }
     }
