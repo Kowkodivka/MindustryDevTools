@@ -1,6 +1,7 @@
 package ru.kowkodivka.tool.bundles;
 
 import arc.util.Strings;
+import mindustry.gen.Player;
 
 import java.util.Locale;
 import java.util.MissingResourceException;
@@ -26,6 +27,21 @@ public class DefaultBundler implements BundleProvider {
     public String get(String key, Object... objects) {
         return get(defaultLocale, key, objects);
     }
+
+    /**
+     * Retrieves a localized string based on the player's locale, using the specified key and optional arguments.
+     * If the localized string is not found for the player's locale, falls back to the default locale.
+     *
+     * @param player  the player for whom the localized string is retrieved
+     * @param key     the key used to identify the localized string
+     * @param objects optional arguments to be formatted into the localized string
+     * @return the localized string with the arguments formatted, or "Missing resource" if the string is not found
+     */
+    @Override
+    public String get(Player player, String key, Object... objects) {
+        return get(player.locale, key, objects);
+    }
+
 
     /**
      * Retrieves the localized string for the given key and locale.
