@@ -1,4 +1,4 @@
-package ru.kowkodivka.tools.network.sockets;
+package ru.kowkodivka.tool.network.sockets;
 
 import arc.Events;
 import arc.net.Client;
