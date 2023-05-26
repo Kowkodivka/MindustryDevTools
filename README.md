@@ -2,6 +2,7 @@
 
 # MindustryDevTools
 
+Only for my personal use in future plugins and projects. <br>
 MindustryDevTools is a set of tools for development purposes in the game Mindustry.
 
 ## Features
