@@ -37,7 +37,7 @@ public class DefaultBundler implements BundleProvider {
         try {
             return Strings.format(bundle.getString(key), objects);
         } catch (MissingResourceException exception) {
-            return Strings.format(defaultBundle.getString(key), objects);
+            return get(key, objects);
         }
     }
 
