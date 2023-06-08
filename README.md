@@ -8,7 +8,6 @@ MindustryDevTools is a set of tools for development purposes in the game Mindust
 ## Features
 
 - Localization
-- Sockets
 - Server security
 - Command timeouts
 
